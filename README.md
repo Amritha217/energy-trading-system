@@ -98,7 +98,6 @@ energy-trading-ai/
 │   └── trading_strategy.py   # Signal generation, PnL simulation, trade log
 ├── .env                      # Environment variables (git-ignored)
 ├── .gitignore
-├── Dockerfile
 ├── main.py                   # CLI entry point
 ├── pyproject.toml            # uv / PEP 517 project metadata
 ├── requirements.txt          # Pip-compatible dependency list

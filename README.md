@@ -13,11 +13,9 @@ An end-to-end machine-learning pipeline that forecasts electricity demand, gener
 - [Quick Start](#quick-start)
 - [Configuration](#configuration)
 - [Running the Project](#running-the-project)
-- [Docker](#docker)
 - [API Reference](#api-reference)
 - [Dashboard](#dashboard)
 - [Resume Bullets](#resume-bullets)
-- [License](#license)
 
 ---
 
@@ -190,38 +188,6 @@ python main.py --api
 # Swagger UI → http://localhost:8000/docs
 ```
 
----
-
-## Docker
-
-### Build the image
-```bash
-docker build -t energy-trading-ai .
-```
-
-### Run the dashboard
-```bash
-docker run -p 8501:8501 \
-  -v $(pwd)/data:/app/data \
-  -e HF_API_TOKEN=hf_xxxx \
-  energy-trading-ai streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0
-```
-
-### Run the API
-```bash
-docker run -p 8000:8000 \
-  -v $(pwd)/data:/app/data \
-  -e HF_API_TOKEN=hf_xxxx \
-  energy-trading-ai uvicorn api.main:app --host 0.0.0.0 --port 8000
-```
-
-### Run the full pipeline inside Docker
-```bash
-docker run \
-  -v $(pwd)/data:/app/data \
-  -e HF_API_TOKEN=hf_xxxx \
-  energy-trading-ai python main.py
-```
 
 ---
 

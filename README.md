@@ -234,15 +234,4 @@ Open `http://localhost:8501` after starting the dashboard.
 
 ---
 
-## Resume Bullets
-
-> Built an end-to-end energy demand forecasting system using **XGBoost** and **Prophet** with a walk-forward backtesting framework for algorithmic trading strategy evaluation.
-
-> Developed an **LLM-powered trading agent** (Mistral-7B via Hugging Face) that generates structured APPROVE/REJECT decisions with risk commentary for each model signal; implemented a deterministic rule-based fallback for offline operation.
-
-> Designed an automated **data pipeline** for PJM hourly load data including DST deduplication, time-weighted interpolation, synthetic price derivation, and feature-drift monitoring.
-
-> Deployed the system as a **Streamlit dashboard** with interactive flip-card metrics, Plotly charts, and a **FastAPI** REST service; containerised with **Docker** for reproducible deployment.
-
----
 

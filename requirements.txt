@@ -1,0 +1,27 @@
+#  Web framework & server 
+fastapi
+uvicorn[standard]
+pydantic
+
+#  Dashboard 
+streamlit
+plotly
+
+#  Data & numerics 
+pandas
+numpy
+
+# ── Machine learning 
+xgboost
+lightgbm
+scikit-learn
+joblib
+
+#  Time-series forecasting 
+prophet
+
+#  HTTP client (Hugging Face API calls) 
+requests
+
+#  Environment variable loading 
+python-dotenv
